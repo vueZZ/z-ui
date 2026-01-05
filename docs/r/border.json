@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "border",
+  "type": "registry:ui",
+  "title": "Border",
+  "description": "A border component.",
+  "files": [
+    {
+      "path": "registry/new-york/ui/border.tsx",
+      "content": "import { cn } from \"@/lib/utils\";\nimport { Slot } from \"@radix-ui/react-slot\"\n\nfunction Border({className, asChild = false, ...props}: React.ComponentProps<\"div\"> & {\n  asChild?: boolean\n}) {\n  const Comp = asChild ? Slot : \"div\"\n  return (\n    <Comp data-slot=\"border\" className={cn('border border-2 border-solid size-25 rounded-md',className)} {...props}>\n    </Comp>\n  );\n}\n\nexport { Border };",
+      "type": "registry:ui"
+    }
+  ]
+}

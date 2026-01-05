@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "f-button",
+  "type": "registry:ui",
+  "title": "FButton",
+  "description": "A button component.",
+  "files": [
+    {
+      "path": "registry/new-york/ui/f-button/index.tsx",
+      "content": "import { cn } from \"@/lib/utils\";\nimport { Slot } from \"@radix-ui/react-slot\"\n\nexport function FButton({className, asChild = false, ...props}: React.ComponentProps<\"button\"> & {\n  asChild?: boolean\n}) {\n  const Comp = asChild ? Slot : \"button\"\n  return (\n    <Comp data-slot=\"f-button\" className={cn('border border-2 border-solid size-25 rounded-md',className)} {...props}>\n    </Comp>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ]
+}

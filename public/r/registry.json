@@ -4,6 +4,30 @@
   "homepage": "https://acme.com",
   "items": [
     {
+      "name": "border",
+      "type": "registry:ui",
+      "title": "Border",
+      "description": "A border component.",
+      "files": [
+        {
+          "path": "registry/new-york/ui/border.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "f-button",
+      "type": "registry:ui",
+      "title": "FButton",
+      "description": "A button component.",
+      "files": [
+        {
+          "path": "registry/new-york/ui/f-button/index.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "hello-world",
       "type": "registry:component",
       "title": "Hello World",

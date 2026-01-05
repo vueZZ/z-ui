@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "registry:build": "shadcn build"
+    "registry:build": "shadcn build",
+    "build:docs": "shadcn build && next build"
   },
   "dependencies": {
     "@radix-ui/react-label": "^2.1.7",
