@@ -1,11 +1,10 @@
 import type { NextConfig } from "next";
-import path from 'path';
 
 const nextConfig: NextConfig = {
   /* config options here */
+  output: 'export',
+  basePath: process.env.PAGES_BASE_PATH,
   turbopack: {
-    // 配置turbopack根目录
-    root: path.join('./'),
     // 配置svg加载器
     rules: {
       '*.svg': {
@@ -23,12 +22,5 @@ const nextConfig: NextConfig = {
     },
   },
 };
-
-if (process.env.NODE_ENV === 'production') {
-  nextConfig.output = 'export'
-  nextConfig.trailingSlash = true
-  nextConfig.distDir = 'docs'
-  nextConfig.basePath = '/z-ui'
-}
 
 export default nextConfig;
