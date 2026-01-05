@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "registry:build": "shadcn build",
-    "build:docs": "shadcn build && next build"
+    "build:docs": "shadcn build && next build",
+    "docs":"http-server ./docs"
   },
   "dependencies": {
     "@radix-ui/react-label": "^2.1.7",
@@ -26,6 +27,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
+    "@svgr/webpack": "^8.1.0",
     "@tailwindcss/postcss": "^4.1.11",
     "@types/node": "^20.19.9",
     "@types/react": "19.1.2",
