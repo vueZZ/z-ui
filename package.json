@@ -1,15 +1,18 @@
 {
-  "name": "registry",
+  "name": "z-ui",
+  "description": "A responsive website component library built with shadcn/ui - a modern, customizable UI collection based on Tailwind CSS and Radix UI. Features copy-paste components for maximum flexibility and accessibility-first design.",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "registry:build": "shadcn build",
-    "build:docs": "shadcn build && next build",
-    "docs":"http-server ./docs"
+    "lint": "eslint",
+    "commit": "git-cz",
+    "prepare": "husky",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "registry:build": "shadcn build"
   },
   "dependencies": {
     "@radix-ui/react-label": "^2.1.7",
